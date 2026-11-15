@@ -1,0 +1,410 @@
+
+.job-details-page {
+  min-height: 100vh;
+  padding: 70px 8%;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.job-details-page h1 {
+  color: #14251a;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.job-details-page p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Job Header */
+.job-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 35px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.job-category {
+  display: inline-block;
+  padding: 7px 14px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.job-details-header p {
+  font-size: 14px;
+}
+
+.save-job-btn {
+  flex-shrink: 0;
+  padding: 12px 20px;
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-job-btn:hover {
+  background: #eff6ff;
+}
+
+.save-job-btn.saved {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+/* Common Sections */
+.job-description-section,
+.required-skills-section,
+.job-information-section,
+.client-information-section,
+.proposal-form-section {
+  padding: 35px;
+  margin-bottom: 30px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.job-details-page h2 {
+  margin-bottom: 22px;
+  color: #14251a;
+  font-size: 22px;
+}
+
+.job-description-section p {
+  margin-bottom: 18px;
+}
+
+.job-description-section h3 {
+  margin: 25px 0 15px;
+  font-size: 17px;
+}
+
+.job-description-section ul {
+  padding-left: 22px;
+}
+
+.job-description-section li {
+  margin-bottom: 12px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Required Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list span {
+  padding: 9px 15px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Job Information */
+.job-information-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.information-item {
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 9px;
+}
+
+.information-item span,
+.client-stats span {
+  display: block;
+  margin-bottom: 9px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.information-item h3,
+.client-stats h3 {
+  color: #1e293b;
+  font-size: 16px;
+}
+
+/* Client Information */
+.client-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.client-avatar {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.client-details h3 {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.client-details p {
+  font-size: 14px;
+}
+
+.client-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 22px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Apply Section */
+.apply-job-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 35px;
+  margin-bottom: 30px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+}
+
+.apply-job-content h2 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.apply-job-content p {
+  max-width: 600px;
+  color: #475569;
+}
+
+.apply-now-btn,
+.submit-proposal-btn {
+  padding: 13px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-now-btn:hover,
+.submit-proposal-btn:hover {
+  background: #1d4ed8;
+}
+
+.apply-now-btn {
+  flex-shrink: 0;
+}
+
+/* Proposal Form */
+.proposal-form-section h2 {
+  margin-bottom: 8px;
+}
+
+.proposal-intro {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  background: white;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.proposal-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.submit-proposal-btn {
+  margin-top: 5px;
+}
+
+/* Success Message */
+.proposal-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 22px;
+  margin-bottom: 30px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+}
+
+.proposal-success > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.proposal-success h3 {
+  margin-bottom: 6px;
+  color: #166534;
+  font-size: 16px;
+}
+
+.proposal-success p {
+  color: #166534;
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .job-details-page {
+    padding: 45px 5%;
+  }
+
+  .job-information-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .job-details-page {
+    padding: 25px 4%;
+  }
+
+  .job-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 23px;
+  }
+
+  .job-details-page h1 {
+    font-size: 24px;
+  }
+
+  .job-details-page h2 {
+    font-size: 20px;
+  }
+
+  .job-description-section,
+  .required-skills-section,
+  .job-information-section,
+  .client-information-section,
+  .proposal-form-section {
+    padding: 23px;
+  }
+
+  .job-information-grid,
+  .client-stats,
+  .proposal-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-job-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 25px;
+  }
+
+  .apply-now-btn,
+  .submit-proposal-btn {
+    width: 100%;
+  }
+}
+
+.job-not-found {
+  padding: 50px 30px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.job-not-found h1 {
+  margin-bottom: 15px;
+}
+
+.job-not-found a,
+.back-to-jobs {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.job-not-found a:hover,
+.back-to-jobs:hover {
+  text-decoration: underline;
+}

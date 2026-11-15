@@ -1,0 +1,345 @@
+
+.find-talent-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-bottom: 60px;
+  color: #1e293b;
+}
+
+/* Header */
+
+.talent-header {
+  background: linear-gradient(120deg, #eff6ff, #f5f3ff);
+  padding: 65px 20px 55px;
+  text-align: center;
+}
+
+.talent-label {
+  display: inline-block;
+  color: #2563eb;
+  background: #dbeafe;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.talent-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 18px 0 12px;
+  color: #172554;
+}
+
+.talent-header p {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Search */
+
+.talent-search {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px 9px 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.talent-search svg {
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.talent-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.talent-search button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.talent-search button:hover {
+  background: #1d4ed8;
+}
+
+/* Main Content */
+
+.talent-content {
+  max-width: 1200px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+.talent-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.talent-top h2 {
+  font-size: 25px;
+  font-weight: 750;
+  margin: 0 0 7px;
+}
+
+.talent-top p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.talent-top select {
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: white;
+  outline: none;
+  color: #334155;
+  cursor: pointer;
+}
+
+/* Freelancer Grid */
+
+.freelancer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.freelancer-card {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 15px;
+  padding: 23px;
+  transition: 0.3s;
+}
+
+.freelancer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border-color: #bfdbfe;
+}
+
+/* Freelancer Identity */
+
+.freelancer-card-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.freelancer-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #dbeafe;
+  flex-shrink: 0;
+}
+
+.freelancer-identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.freelancer-identity h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+
+.freelancer-identity span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.verified-badge {
+  width: 22px;
+  height: 22px;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Rating */
+
+.freelancer-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.freelancer-rating strong {
+  color: #334155;
+}
+
+.freelancer-rating span {
+  color: #94a3b8;
+}
+
+/* Skills */
+
+.freelancer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.freelancer-skills span {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 7px 11px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Details */
+
+.freelancer-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.freelancer-details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.freelancer-details svg {
+  color: #94a3b8;
+}
+
+/* Card Footer */
+
+.freelancer-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.freelancer-card-footer strong {
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.freelancer-card-footer small {
+  color: #64748b;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.view-profile-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-profile-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Empty Search Result */
+
+.no-freelancers {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e8edf5;
+}
+
+.no-freelancers p {
+  color: #64748b;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+  .freelancer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .talent-header {
+    padding: 45px 15px;
+  }
+
+  .talent-header h1 {
+    font-size: 28px;
+  }
+
+  .talent-search {
+    gap: 8px;
+  }
+
+  .talent-search button {
+    padding: 12px;
+  }
+
+  .talent-content {
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+
+  .talent-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .talent-top h2 {
+    font-size: 22px;
+  }
+
+  .freelancer-card {
+    padding: 17px;
+  }
+
+  .freelancer-details {
+    gap: 10px;
+  }
+}

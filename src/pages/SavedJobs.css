@@ -1,0 +1,164 @@
+
+.saved-jobs-page {
+  min-height: 100vh;
+  padding: 70px 8%;
+  background: #f8fafc;
+}
+
+.saved-jobs-header {
+  margin-bottom: 35px;
+}
+
+.saved-jobs-header h1 {
+  color: #14251a;
+  font-size: 34px;
+}
+
+.saved-jobs-header p {
+  margin: 10px 0;
+  color: #64748b;
+}
+
+.saved-jobs-header > span {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.saved-jobs-list {
+  display: grid;
+  gap: 20px;
+}
+
+.saved-job-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.saved-job-card h2 {
+  margin: 15px 0 10px;
+  color: #1e293b;
+  font-size: 21px;
+}
+
+.saved-job-card > p {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.saved-job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.saved-job-skills span {
+  padding: 7px 12px;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.saved-job-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.saved-job-bottom > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.saved-job-bottom strong {
+  color: #16a34a;
+  font-size: 21px;
+}
+
+.saved-job-bottom small {
+  color: #64748b;
+}
+
+.saved-job-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.saved-job-actions a,
+.saved-job-actions button {
+  padding: 10px 17px;
+  border: none;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.saved-job-actions a {
+  background: #16a34a;
+  color: white;
+}
+
+.saved-job-actions button {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.empty-saved-jobs {
+  padding: 65px 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.empty-saved-jobs > div {
+  color: #16a34a;
+  font-size: 55px;
+}
+
+.empty-saved-jobs h2 {
+  margin: 15px 0 10px;
+}
+
+.empty-saved-jobs p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.empty-saved-jobs a {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #16a34a;
+  color: white;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .saved-jobs-page {
+    padding: 40px 5%;
+  }
+
+  .saved-job-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .saved-job-actions {
+    width: 100%;
+  }
+
+  .saved-job-actions a,
+  .saved-job-actions button {
+    flex: 1;
+    text-align: center;
+  }
+}

@@ -1,0 +1,124 @@
+
+.auth-page {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #f5f8f6;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 42px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e9eeeb;
+}
+
+.auth-card h1 {
+  font-size: 30px;
+  color: #172b22;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.auth-card > p {
+  text-align: center;
+  color: #718078;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #34483d;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #dce5df;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+
+.auth-card input:focus {
+  border-color: #14a76c;
+  box-shadow: 0 0 0 3px rgba(20, 167, 108, 0.12);
+}
+
+.auth-card form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 9px;
+  background: #14a76c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card form button:hover {
+  background: #108657;
+  transform: translateY(-2px);
+}
+
+.auth-card form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-card .success-message {
+  background: #e9f8f0;
+  color: #147a4b;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.auth-card .error-message {
+  background: #fff0f0;
+  color: #c0392b;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.auth-card a {
+  color: #14a76c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .auth-card h1 {
+    font-size: 25px;
+  }
+}
